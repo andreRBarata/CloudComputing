@@ -9,7 +9,8 @@ import sys
 # Words to test
 words = [
   "Oxo", "OXO", "123454321",
-  "ROTATOR", "12345  54321"
+  "ROTATOR", "12345  54321",
+  67643, 5678, 1221
 ]
 
 # Tests each word
