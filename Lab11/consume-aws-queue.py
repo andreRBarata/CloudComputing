@@ -33,8 +33,7 @@ conn = boto.sqs.connect_to_region(
 # Do not use / or " in the name
 q = conn.get_queue("C13765235-%s" % sys.argv[1])
 
-
-for i in range(0, q.count()):
-	m = q.read(60)
+m = q.read(60)
+if (m != None):
 	q.delete_message(m)
 	print("Message read = %s" % m.get_body())
