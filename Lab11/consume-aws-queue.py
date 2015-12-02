@@ -36,4 +36,5 @@ q = conn.get_queue("C13765235-%s" % sys.argv[1])
 
 for i in range(0, q.count()):
 	m = q.read(60)
+	q.delete_message(m)
 	print("Message read = %s" % m.get_body())
