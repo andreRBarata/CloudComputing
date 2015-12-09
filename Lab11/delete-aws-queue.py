@@ -40,4 +40,4 @@ if (q != None):
 
 	print("queue %s is now deleted" % q.id)
 else:
-	print("queue is not delete")
+	print("queue is not found")
